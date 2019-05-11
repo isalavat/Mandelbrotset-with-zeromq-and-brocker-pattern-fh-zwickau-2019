@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+option java_package = "loadbalancingbroker.protobuf";
+option java_outer_classname = "RequestProto";
+
+message Request {
+	required int32 imgWidth = 1;
+	required int32 imgHeight = 2;
+	required int32 xBegin = 3;
+	required int32 xEnd = 4;
+	required int32 yBegin = 5;
+	required int32 yEnd = 6;
+}

@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+option java_package = "loadbalancingbroker.protobuf";
+option java_outer_classname = "ReplyProto";
+
+message Reply {
+
+	required int32 xBegin = 1; 
+	required int32 xEnd = 2;
+	required int32 yBegin = 3; 
+	required int32 yEnd = 4;
+	repeated Row rows = 5;
+
+	message Row {
+		repeated int32 grayValues = 1;
+	}
+
+}
+
+
+
+
+
+
